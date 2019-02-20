@@ -2,9 +2,6 @@
 # Name
 # Avatar (profile picture)
 
-# def do_stuff():
-#       pass
-
 class Character():
     
     # Constructor Method
@@ -53,4 +50,8 @@ class Hero(Character):
     pass
 
 class Monster(Character):
-    pass
+    def __init__(self, new_name):
+        self.name = new_name
+
+    def greet(self, someone=None):
+        return "uuuggghhh"

@@ -41,9 +41,14 @@ print(bronn.greet(arya))
 print(jon.greet(bronn))
 
 # Monster class
-joffrey = Monster("Joffrey Baratheon", "joffrey.png")
-print(joffrey.name)
+walker = Monster("White Walker")
+print(walker.name)
 
 # Hero greets Monster
 jon = Hero("Jon Snow", "jon.png")
-print(jon.greet(joffrey))
+print(jon.greet(walker))
+
+# Should print "uuuggghhhh"
+print(walker.greet())
+
+print(walker.greet(jon))
