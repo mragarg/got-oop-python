@@ -6,4 +6,8 @@
 #       pass
 
 class Character():
-    pass
+    
+    # Constructor Method
+    def __init__(self, new_name):
+        # 'self' is similar to 'this' in other languages
+        self.name = new_name
