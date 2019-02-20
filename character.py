@@ -14,5 +14,9 @@ class Character():
         self.avatar = new_avatar
         self.inventory = []
 
-    def greet(self):
-        return "Hello, I am %s. I am awesome." % self.name
+    #someone=None is similar to `null` in other langauges
+    def greet(self, someone=None):
+        if someone:
+            return "Hello, %s, I am %s. I am awesome." % (someone.name, self.name)
+        else:
+            return "Hello, I am %s. I am awesome." % self.name
