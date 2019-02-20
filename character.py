@@ -30,17 +30,20 @@ class Character():
         else:
             return "Hello, I am %s. I am awesome." % self.name
 
-    # #Add item to inventory
-    # def add_inventory(self, item):
-    #     self.inventory.append(item)
+    #Add item to inventory
+    def add_inventory(self, item):
+        self.inventory.append(item)
 
-    # #View item from inventory
-    # def view_inventory(self):
-    #     return self.inventory
+    #View item from inventory
+    def view_inventory(self):
+        return self.inventory
 
-    # #Remove item from inventory
-    # def remove_inventory(self, item):
-    #     if item in self.inventory:
+    #Remove item from inventory
+    def remove_inventory(self, item):
+        if item in self.inventory:
+            self.inventory.remove(item)
+        else:
+            print("Item not in inventory.")
 
 # Hero is a kind of Character
 # Hero is a subclass of Character

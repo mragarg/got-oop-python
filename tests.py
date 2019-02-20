@@ -25,18 +25,22 @@ print(arya.greet())
 # Return "Hello, Jon Snow, I am Arya Stark. I am awesome."
 print(arya.greet(jon))
 
-# # Testing adding, viewing, and removing items to inventory
-# arya.add_inventory("food")
-# print(arya.view_inventory())
+# Testing adding, viewing, and removing items to inventory
+arya.add_inventory("food")
+print(arya.view_inventory())
+arya.remove_inventory("sword")
+print(arya.view_inventory())
 
 
+# Hero class
 bronn = Hero("Bronn of the Blackwater", "bron.png")
+print(bronn.name)
 
 # Hero should be able to greet Character
 print(bronn.greet(arya))
 print(jon.greet(bronn))
 
-# Monster 
+# Monster class
 joffrey = Monster("Joffrey Baratheon", "joffrey.png")
 print(joffrey.name)
 
