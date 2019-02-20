@@ -2,6 +2,7 @@
 
 from character import Character
 from character import Hero
+from character import Monster
 
 # Characters can be instantiated with name and avatar
 arya = Character("Arya Stark", "arya.png")
@@ -30,3 +31,15 @@ print(arya.greet(jon))
 
 
 bronn = Hero("Bronn of the Blackwater", "bron.png")
+
+# Hero should be able to greet Character
+print(bronn.greet(arya))
+print(jon.greet(bronn))
+
+# Monster 
+joffrey = Monster("Joffrey Baratheon", "joffrey.png")
+print(joffrey.name)
+
+# Hero greets Monster
+jon = Hero("Jon Snow", "jon.png")
+print(jon.greet(joffrey))

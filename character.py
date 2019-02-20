@@ -17,7 +17,16 @@ class Character():
     #someone=None is similar to `null` in other langauges
     def greet(self, someone=None):
         if someone:
-            return "Hello, %s, I am %s. I am awesome." % (someone.name, self.name)
+            # Hero greets Monster
+            if type(self) == Hero and type(someone) == Monster:
+                return "Hello, %s. Nobody likes you. Love, %s" % (someone.name, self.name)
+            # Monster greets Hero
+            if type(self) == Monster and type(someone) == Hero:
+                return "Hello, %s. My name is %s and I'm going to ruin your life." % (someone.name, self.name)
+            # Character greets Character
+            else:
+                return "Hello, %s, I am %s. I am awesome." % (someone.name, self.name)
+        # Character greets nobody
         else:
             return "Hello, I am %s. I am awesome." % self.name
 
@@ -38,4 +47,7 @@ class Character():
 # Hero inherits from Character
 # Character is the superclass of Hero
 class Hero(Character):
+    pass
+
+class Monster(Character):
     pass
