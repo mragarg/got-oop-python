@@ -20,3 +20,22 @@ class Character():
             return "Hello, %s, I am %s. I am awesome." % (someone.name, self.name)
         else:
             return "Hello, I am %s. I am awesome." % self.name
+
+    # #Add item to inventory
+    # def add_inventory(self, item):
+    #     self.inventory.append(item)
+
+    # #View item from inventory
+    # def view_inventory(self):
+    #     return self.inventory
+
+    # #Remove item from inventory
+    # def remove_inventory(self, item):
+    #     if item in self.inventory:
+
+# Hero is a kind of Character
+# Hero is a subclass of Character
+# Hero inherits from Character
+# Character is the superclass of Hero
+class Hero(Character):
+    pass
